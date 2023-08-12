@@ -92,8 +92,9 @@ p.para img {
 }
 
 button.ana-sayfa {
+    padding: .5rem;
     position: absolute;
-    left: 2rem;
+    right: 2rem;
     top: 2rem;
     height: 1.5rem;
     width: 1.5rem;
