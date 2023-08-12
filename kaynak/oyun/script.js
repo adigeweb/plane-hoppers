@@ -30,7 +30,7 @@ window.addEventListener("load", () => {
         oyuncu.style.backgroundSize = "100% 100%";
     }
     if (localStorage.getItem("engelKostum") && localStorage.getItem("alinanlar").includes(btoa(localStorage.getItem("engelKostum")))) {
-        getCSSRule(".bariyer .ust, .bariyer .alt").style.background = `url("./${localStorage.getItem("engelKostum")}")`;
+        getCSSRule(".bariyer .ust, .bariyer .alt").style.background = `url("../${localStorage.getItem("engelKostum")}")`;
         getCSSRule(".bariyer .ust, .bariyer .alt").style.backgroundSize = "100% 100%";
     }
 });
