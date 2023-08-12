@@ -95,7 +95,7 @@ const game = new Update(
         if (touches(oyuncu, yer)) {
             game.over((puan) => {
                 document.querySelector(".kaybettin #sonPuan").innerText = `Skor: ${puan}`;
-                document.querySelector(".oyuncu").style.background = "url(\"../kaynak/patlama.png\")";
+                document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\")";
                 if (puan < 4) {
                     document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
                 }
@@ -147,7 +147,7 @@ const game = new Update(
                 if (touches(item, oyuncu)) {
                     game.over((puan) => {
                         document.querySelector(".kaybettin #sonPuan").innerText = `Skor: ${puan}`;
-                        document.querySelector(".oyuncu").style.background = "url(\"../kaynak/patlama.png\")";
+                        document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\")";
                         if (puan < 4) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
                         }
@@ -173,7 +173,7 @@ const game = new Update(
                 if (touches(item, oyuncu)) {
                     game.over((puan) => {
                         document.querySelector(".kaybettin #sonPuan").innerText = `Skor: ${puan}`;
-                        document.querySelector(".oyuncu").style.background = "url(\"../kaynak/patlama.png\")";
+                        document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\")";
                         if (puan < 4) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
                         }
