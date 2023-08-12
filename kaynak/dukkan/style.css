@@ -91,22 +91,25 @@ p.para img {
     opacity: 1;
 }
 
+.kutu button.al:hover {
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, .75);
+    justify-self: flex-end;
+}
+
 button.ana-sayfa {
     padding: .5rem;
     position: absolute;
     right: 2rem;
     top: 2rem;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background: white;
     color: dodgerblue;
     font-size: 1rem;
     font-weight: bolder;
     border: none;
     border-radius: 5px;
-}
-
-.kutu button.al:hover {
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, .75);
-    justify-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
