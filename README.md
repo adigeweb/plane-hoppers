@@ -1,2 +1,2 @@
 # plane-hoppers
-Flappy Bird ama daha çok özellik
+Flappy Bird ama daha çok özellik...
