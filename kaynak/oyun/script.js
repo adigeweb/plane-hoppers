@@ -26,11 +26,11 @@ const getCSSRule = (ruleName) => {
 window.addEventListener("load", () => {
     oyuncu.style.top = "10%";
     if (localStorage.getItem("ucakKostum") && localStorage.getItem("alinanlar").includes(btoa(localStorage.getItem("ucakKostum")))) {
-        oyuncu.style.background = `url("../kaynak/${localStorage.getItem("ucakKostum")}")`;
+        oyuncu.style.background = `url("./kaynak/${localStorage.getItem("ucakKostum")}")`;
         oyuncu.style.backgroundSize = "100% 100%";
     }
     if (localStorage.getItem("engelKostum") && localStorage.getItem("alinanlar").includes(btoa(localStorage.getItem("engelKostum")))) {
-        getCSSRule(".bariyer .ust, .bariyer .alt").style.background = `url("../${localStorage.getItem("engelKostum")}")`;
+        getCSSRule(".bariyer .ust, .bariyer .alt").style.background = `url("./${localStorage.getItem("engelKostum")}")`;
         getCSSRule(".bariyer .ust, .bariyer .alt").style.backgroundSize = "100% 100%";
     }
 });
