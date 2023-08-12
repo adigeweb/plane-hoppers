@@ -1,0 +1,63 @@
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: skyblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.kontrol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+button {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    transition: .2s;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#basla {
+    background: dodgerblue;
+}
+
+button#dukkan {
+    background: limegreen;
+}
+
+button:hover {
+    scale: 1.05;
+}
+
+button:not(:active) {
+    box-shadow: 5px 5px 0 rgb(0, 0, 0);
+}
+
+button:active {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    box-shadow: none;
+}
