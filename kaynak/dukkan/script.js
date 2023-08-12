@@ -24,7 +24,7 @@ document.querySelectorAll(".kutu button.al").forEach(btn => {
     }
     else {
         btn.addEventListener("click", () => {
-            fetch("../kaynak/veri/index.json")
+            fetch("./kaynak/veri/index.json")
             .then(res => res.json())
             .then(data => {
                 console.log(data);
