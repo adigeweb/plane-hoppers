@@ -91,6 +91,18 @@ p.para img {
     opacity: 1;
 }
 
+button.ana-sayfa {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: white;
+    color: dodgerblue;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
 .kutu button.al:hover {
     box-shadow: 5px 5px 5px rgba(255, 255, 255, .75);
     justify-self: flex-end;
