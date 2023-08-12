@@ -116,7 +116,7 @@ const game = new Update(
                 localStorage.setItem("para", new String(parseInt(mevcutPara) + puan));
             });
         }
-        if (game.frame % 75 == 0) {
+        if (game.frame % 100 == 0) {
             const engel = document.createElement("div");
             engel.className = "bariyer";
             const ust = document.createElement("div");
