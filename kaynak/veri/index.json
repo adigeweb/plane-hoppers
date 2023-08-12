@@ -1,0 +1,17 @@
+{
+    "helikopter.png": {
+        "fiyat": 20
+    },
+    "helikopter2.gif": {
+        "fiyat": 35
+    },
+    "kirmiziengel.png": {
+        "fiyat": 20
+    },
+    "maviengel.png": {
+        "fiyat": 35
+    },
+    "lolipopengel.png": {
+        "fiyat": 50
+    }
+}
