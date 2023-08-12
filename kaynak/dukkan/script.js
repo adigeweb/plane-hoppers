@@ -9,6 +9,7 @@ document.querySelectorAll(".kutu button.al").forEach(btn => {
         if (localStorage.getItem(`${btn.getAttribute("tur")}Kostum`) === btn.getAttribute("esya")) {
             btn.innerText = "Mevcut";
             btn.style.background = "limegreen";
+            btn.parentNode.style.border = "4px solid white";
             btn.addEventListener("click", () => {
                 localStorage.setItem(`${btn.getAttribute("tur")}Kostum`, "");
                 location.reload();
