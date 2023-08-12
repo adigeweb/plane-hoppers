@@ -205,5 +205,5 @@ document.querySelector(".kaybettin button#tekrar").addEventListener("click", () 
 });
 
 document.querySelector(".kaybettin button#menu").addEventListener("click", () => {
-    location.href = "/";
+    location.href = "./";
 });
