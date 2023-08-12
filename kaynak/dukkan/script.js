@@ -9,7 +9,7 @@ document.querySelectorAll(".kutu button.al").forEach(btn => {
         if (localStorage.getItem(`${btn.getAttribute("tur")}Kostum`) === btn.getAttribute("esya")) {
             btn.innerText = "Mevcut";
             btn.style.background = "limegreen";
-            btn.parentNode.style.border = "4px solid dodgerblue";
+            btn.parentNode.style.border = "4px solid limegreen";
             btn.addEventListener("click", () => {
                 localStorage.setItem(`${btn.getAttribute("tur")}Kostum`, "");
                 location.reload();
@@ -17,7 +17,7 @@ document.querySelectorAll(".kutu button.al").forEach(btn => {
         }
         else {
             btn.innerText = "Kullan";
-            btn.parentNode.style.border = "4px solid white";
+            btn.parentNode.style.border = "2px solid white";
             btn.addEventListener("click", () => {
                 localStorage.setItem(`${btn.getAttribute("tur")}Kostum`, btn.getAttribute("esya"));
                 location.reload();
