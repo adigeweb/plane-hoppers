@@ -106,6 +106,8 @@ const game = new Update(
                 }
                 else {
                     document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
+                    const ses = new Audio("../kaynak/dusus.ogg");
+                    ses.play();
                 }
                 if (puan < 4) {
                     document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
@@ -167,6 +169,8 @@ const game = new Update(
                         }
                         else {
                             document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
+                            const ses = new Audio("../kaynak/dusus.ogg");
+                            ses.play();
                         }
                         if (puan < 4) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
@@ -202,6 +206,8 @@ const game = new Update(
                         }
                         else {
                             document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
+                            const ses = new Audio("../kaynak/dusus.ogg");
+                            ses.play();
                         }
                         if (puan < 4) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
