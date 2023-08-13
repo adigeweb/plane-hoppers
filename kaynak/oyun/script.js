@@ -135,7 +135,7 @@ const game = new Update(
         if (bariyerler) {
             bariyerler.forEach(item => {
                 item.style.left = (parseInt(item.style.left.replace("vw", "")) - 1).toString() + "vw";
-                if (item.style.left.replace("vw", "") < 0) {
+                if (item.style.left.replace("vw", "") < -20) {
                     item.remove();
                 }
                 if ((parseInt(item.style.left.replace("vw", "")) + 5) < 20) {
