@@ -107,6 +107,7 @@ const game = new Update(
                 else {
                     document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
                     const ses = new Audio("./kaynak/dusus.ogg");
+                    ses.volume = .2;
                     ses.play();
                 }
                 if (puan < 4) {
@@ -170,6 +171,7 @@ const game = new Update(
                         else {
                             document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
                             const ses = new Audio("./kaynak/dusus.ogg");
+                            ses.volume = .2;
                             ses.play();
                         }
                         if (puan < 4) {
@@ -207,6 +209,7 @@ const game = new Update(
                         else {
                             document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
                             const ses = new Audio("./kaynak/dusus.ogg");
+                            ses.volume = .2;
                             ses.play();
                         }
                         if (puan < 4) {
@@ -242,3 +245,10 @@ document.querySelector(".kaybettin button#tekrar").addEventListener("click", () 
 document.querySelector(".kaybettin button#menu").addEventListener("click", () => {
     location.href = "./";
 });
+
+var musiki = document.createElement("audio");
+musiki.setAttribute("src", "notify.wav");
+musiki.setAttribute("autoplay", "autoplay");
+musiki.setAttribute("loop", "loop");
+musiki.style.display = "none";
+musiki.play();
