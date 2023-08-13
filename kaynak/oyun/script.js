@@ -247,3 +247,7 @@ const musikiler = [
     "invincible.wav",
     "marimbalights.wav"
 ];
+
+setInterval(() => {
+    new Audio(`./kaynak/arkaplan-ses/${musikiler[Math.floor(Math.random() * musikiler.length)]}`).play();
+});
