@@ -8,6 +8,9 @@
     "goldenplanereal.png": {
         "fiyat": 300
     },
+    "uzaymekik.png": {
+        "fiyat": 100
+    },
     "kirmiziengel.png": {
         "fiyat": 20
     },
@@ -16,5 +19,11 @@
     },
     "lolipopengel.png": {
         "fiyat": 50
+    },
+    "altinbariyer.png": {
+        "fiyat": 50
+    },
+    "uzayengel.png": {
+        "fiyat": 100
     }
 }
