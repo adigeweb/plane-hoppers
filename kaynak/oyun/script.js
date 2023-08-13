@@ -248,6 +248,8 @@ const musikiler = [
     "marimbalights.wav"
 ];
 
-setInterval(() => {
-    new Audio(`./kaynak/arkaplan-ses/${musikiler[Math.floor(Math.random() * musikiler.length)]}`).play();
+const ses = ((audio) => {
+    new Audio(`./kaynak/arkaplan-ses/${audio}`).play();
 });
+
+setTimeout(ses, musikiler[Math.floor(Math.random() * musikiler.length)].duration)
