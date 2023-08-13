@@ -39,7 +39,7 @@ document.body.addEventListener("keydown", (event) => {
     if (event.keyCode === 32) {
         game.jumping = true;
         clearInterval(game.jumpTimeout);
-        game.jumpTimeout = setTimeout(() => { game.jumping = false }, screen.height / 6);
+        game.jumpTimeout = setTimeout(() => { game.jumping = false }, screen.height / 7);
     }
 });
 
@@ -47,14 +47,14 @@ window.addEventListener("touchstart", () => {
     if (!game.started) game.loop(20);
     game.jumping = true;
     clearInterval(game.jumpTimeout);
-    game.jumpTimeout = setTimeout(() => { game.jumping = false }, screen.height / 6);
+    game.jumpTimeout = setTimeout(() => { game.jumping = false }, screen.height / 7);
 });
 
 window.addEventListener("click", () => {
     if (!game.started) game.loop(20);
     game.jumping = true;
     clearInterval(game.jumpTimeout);
-    game.jumpTimeout = setTimeout(() => { game.jumping = false }, screen.height / 6);
+    game.jumpTimeout = setTimeout(() => { game.jumping = false }, screen.height / 7);
 });
 
 class Update {
