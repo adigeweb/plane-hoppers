@@ -96,8 +96,17 @@ const game = new Update(
         if (game.jumping) oyuncu.style.top = (parseInt(oyuncu.style.top.replace("%", "")) - 1).toString() + "%";
         if (touches(oyuncu, yer)) {
             game.over((puan) => {
+                getCSSRule(".oyuncu").style.height = "10rem";
+                getCSSRule(".oyuncu").style.width = "10rem";
                 document.querySelector(".kaybettin #sonPuan").innerText = `Skor: ${puan}`;
-                document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\")";
+                if (localStorage.getItem("ucakKostum") === "goldenplanereal.png") {
+                    document.querySelector(".oyuncu").style.background = "url(\"./kaynak/goldenplaneolum.png\") no-repeat";
+                    const ses = new Audio("../kaynak/goldendususses.wav");
+                    ses.play();
+                }
+                else {
+                    document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
+                }
                 if (puan < 4) {
                     document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
                 }
@@ -148,8 +157,17 @@ const game = new Update(
             document.querySelectorAll(".bariyer .ust").forEach(item => {
                 if (touches(item, oyuncu)) {
                     game.over((puan) => {
+                        getCSSRule(".oyuncu").style.height = "10rem";
+                        getCSSRule(".oyuncu").style.width = "10rem";
                         document.querySelector(".kaybettin #sonPuan").innerText = `Skor: ${puan}`;
-                        document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\")";
+                        if (localStorage.getItem("ucakKostum") === "goldenplanereal.png") {
+                            document.querySelector(".oyuncu").style.background = "url(\"./kaynak/goldenplaneolum.png\") no-repeat";
+                            const ses = new Audio("../kaynak/goldendususses.wav");
+                            ses.play();
+                        }
+                        else {
+                            document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
+                        }
                         if (puan < 4) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
                         }
@@ -174,8 +192,17 @@ const game = new Update(
             document.querySelectorAll(".bariyer .alt").forEach(item => {
                 if (touches(item, oyuncu)) {
                     game.over((puan) => {
+                        getCSSRule(".oyuncu").style.height = "10rem";
+                        getCSSRule(".oyuncu").style.width = "10rem";
                         document.querySelector(".kaybettin #sonPuan").innerText = `Skor: ${puan}`;
-                        document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\")";
+                        if (localStorage.getItem("ucakKostum") === "goldenplanereal.png") {
+                            document.querySelector(".oyuncu").style.background = "url(\"./kaynak/goldenplaneolum.png\") no-repeat";
+                            const ses = new Audio("../kaynak/goldendususses.wav");
+                            ses.play();
+                        }
+                        else {
+                            document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
+                        }
                         if (puan < 4) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[0];
                         }
