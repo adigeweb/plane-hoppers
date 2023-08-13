@@ -164,12 +164,12 @@ const game = new Update(
                         document.querySelector(".kaybettin #sonPuan").innerText = `Skor: ${puan}`;
                         if (localStorage.getItem("ucakKostum") === "goldenplanereal.png") {
                             document.querySelector(".oyuncu").style.background = "url(\"./kaynak/goldenplaneolum.png\") no-repeat";
-                            const ses = new Audio("../kaynak/goldendususses.wav");
+                            const ses = new Audio("./kaynak/goldendususses.wav");
                             ses.play();
                         }
                         else {
                             document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
-                            const ses = new Audio("../kaynak/dusus.ogg");
+                            const ses = new Audio("./kaynak/dusus.ogg");
                             ses.play();
                         }
                         if (puan < 4) {
@@ -201,12 +201,12 @@ const game = new Update(
                         document.querySelector(".kaybettin #sonPuan").innerText = `Skor: ${puan}`;
                         if (localStorage.getItem("ucakKostum") === "goldenplanereal.png") {
                             document.querySelector(".oyuncu").style.background = "url(\"./kaynak/goldenplaneolum.png\") no-repeat";
-                            const ses = new Audio("../kaynak/goldendususses.wav");
+                            const ses = new Audio("./kaynak/goldendususses.wav");
                             ses.play();
                         }
                         else {
                             document.querySelector(".oyuncu").style.background = "url(\"./kaynak/patlama.png\") no-repeat";
-                            const ses = new Audio("../kaynak/dusus.ogg");
+                            const ses = new Audio("./kaynak/dusus.ogg");
                             ses.play();
                         }
                         if (puan < 4) {
