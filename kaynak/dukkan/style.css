@@ -10,6 +10,10 @@ body {
     flex-direction: column;
 }
 
+.ui {
+    z-index: 6;
+}
+
 p.para {
     font-size: 2rem;
     display: flex;
@@ -32,9 +36,11 @@ p.para img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
     height: 100vh;
     width: 100vw;
+    margin-top: 6rem;
 }
 
 .kutu {
@@ -112,4 +118,9 @@ button.ana-sayfa {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+button.ana-sayfa:hover {
+    background: lightgray;
 }

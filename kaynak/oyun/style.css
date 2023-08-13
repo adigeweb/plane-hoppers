@@ -8,6 +8,10 @@ body {
     user-select: none;
 }
 
+.ui {
+    z-index: 6;
+}
+
 .oyuncu {
     height: 50px;
     width: 90px;

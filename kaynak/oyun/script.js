@@ -12,7 +12,6 @@ const getCSSRule = (ruleName) => {
     ruleName = ruleName.toLowerCase();
     var result = null;
     var find = Array.prototype.find;
-
     find.call(document.styleSheets, styleSheet => {
         result = find.call(styleSheet.cssRules, cssRule => {
             return cssRule instanceof CSSStyleRule 
@@ -66,6 +65,9 @@ class Update {
         this.score = 0;
     }
     loop(delay) {
+        if (localStorage.getItem("engelKostum") === "lolipopengel.png") {
+            getCSSRule(".bariyer .ust, .bariyer .alt").style.borderRadius = "30%";
+        }
         this.gameLoop = setInterval(this.script, delay);
         this.started = true;
         this.jumping = false;
@@ -76,7 +78,7 @@ class Update {
     }
 }
 
-function touches(a, b) {
+const touches = (a, b) => {
     var aRect = a.getBoundingClientRect();
     var bRect = b.getBoundingClientRect();
     return !(

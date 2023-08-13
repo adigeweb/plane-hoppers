@@ -61,3 +61,8 @@ button:active {
     top: 5px;
     box-shadow: none;
 }
+
+img.logo {
+    scale: 4;
+    margin-top: 2rem
+}
