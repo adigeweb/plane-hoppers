@@ -35,7 +35,35 @@ window.addEventListener("load", () => {
 });
 
 document.body.addEventListener("keydown", (event) => {
-    if (!game.started) game.loop(20);
+    if (!game.started) {
+        game.loop(20);
+        if (
+            localStorage.getItem("ucakKostum") === "uzaymekik.png" &&
+            localStorage.getItem("engelKostum") === "uzayengel.png" &&
+            localStorage.getItem("alinanlar").includes(btoa("uzaymekik.png")) &&
+            localStorage.getItem("alinanlar").includes(btoa("uzayengel.png"))
+        ) {
+            document.body.style.background = "url(\"./kaynak/galaxy.jpg\") no-repeat";
+            const musiki = document.createElement("audio");
+            musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
+            musiki.volume = .2;
+            musiki.setAttribute("autoplay", "autoplay");
+            musiki.setAttribute("loop", "loop");
+            musiki.style.display = "none";
+            musiki.play();
+        }
+        
+        else {
+            document.body.style.background = "url(\"./kaynak/skybackground.png\") no-repeat";
+            const musiki = document.createElement("audio");
+            musiki.setAttribute("src", "./kaynak/arkaplan-ses/invincible.wav");
+            musiki.volume = .2;
+            musiki.setAttribute("autoplay", "autoplay");
+            musiki.setAttribute("loop", "loop");
+            musiki.style.display = "none";
+            musiki.play();
+        }
+    };
     if (event.keyCode === 32) {
         game.jumping = true;
         clearInterval(game.jumpTimeout);
@@ -245,10 +273,3 @@ document.querySelector(".kaybettin button#tekrar").addEventListener("click", () 
 document.querySelector(".kaybettin button#menu").addEventListener("click", () => {
     location.href = "./";
 });
-
-var musiki = document.createElement("audio");
-musiki.setAttribute("src", "notify.wav");
-musiki.setAttribute("autoplay", "autoplay");
-musiki.setAttribute("loop", "loop");
-musiki.style.display = "none";
-musiki.play();
