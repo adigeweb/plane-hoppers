@@ -1,7 +1,7 @@
 body {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     background: skyblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
