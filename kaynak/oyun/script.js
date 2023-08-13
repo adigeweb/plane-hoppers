@@ -2,10 +2,10 @@ const oyuncu = document.querySelector(".oyuncu");
 const yer = document.querySelector(".yer");
 
 const mesajlar = [
-    "biraz daha çalış",
-    "eh fena değil",
-    "iyi gidiyorsun",
-    "yapıyosun bu işi"
+    "Biraz daha çalış",
+    "Fena değil",
+    "İyi gidiyorsun",
+    "Yapıyorsun bu işi!"
 ];
 
 const getCSSRule = (ruleName) => {
@@ -118,7 +118,7 @@ const game = new Update(
                 else if (puan < 10) {
                     document.querySelector(".kaybettin #mesaj").innerText = mesajlar[2];
                 }
-                else if (puan > 10) {
+                else if (puan >= 10) {
                     document.querySelector(".kaybettin #mesaj").innerText = mesajlar[3];
                 }
                 document.querySelector(".kaybettin").style.display = "flex";
@@ -181,7 +181,7 @@ const game = new Update(
                         else if (puan < 10) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[2];
                         }
-                        else if (puan > 10) {
+                        else if (puan >= 10) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[3];
                         }
                         document.querySelector(".kaybettin").style.display = "flex";
@@ -218,7 +218,7 @@ const game = new Update(
                         else if (puan < 10) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[2];
                         }
-                        else if (puan > 10) {
+                        else if (puan >= 10) {
                             document.querySelector(".kaybettin #mesaj").innerText = mesajlar[3];
                         }
                         document.querySelector(".kaybettin").style.display = "flex";
