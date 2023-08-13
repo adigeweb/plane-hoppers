@@ -29,7 +29,7 @@ body {
     background-size: 50% 100%;
     position: absolute;
     margin: 0;
-    bottom: 0;
+    bottom: -1rem;
     z-index: 2;
 }
 
