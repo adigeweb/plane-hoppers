@@ -54,7 +54,7 @@ document.body.addEventListener("keydown", (event) => {
             fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
-            musiki.volume = .2;
+            musiki.volume = .4;
             musiki.setAttribute("autoplay", "autoplay");
             musiki.setAttribute("loop", "loop");
             musiki.style.display = "none";
@@ -66,7 +66,7 @@ document.body.addEventListener("keydown", (event) => {
             fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/invincible.wav");
-            musiki.volume = .2;
+            musiki.volume = .4;
             musiki.setAttribute("autoplay", "autoplay");
             musiki.setAttribute("loop", "loop");
             musiki.style.display = "none";
@@ -93,7 +93,7 @@ window.addEventListener("touchstart", () => {
             fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
-            musiki.volume = .2;
+            musiki.volume = .4;
             musiki.setAttribute("autoplay", "autoplay");
             musiki.setAttribute("loop", "loop");
             musiki.style.display = "none";
@@ -105,7 +105,7 @@ window.addEventListener("touchstart", () => {
             fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/invincible.wav");
-            musiki.volume = .2;
+            musiki.volume = .4;
             musiki.setAttribute("autoplay", "autoplay");
             musiki.setAttribute("loop", "loop");
             musiki.style.display = "none";
@@ -130,7 +130,7 @@ window.addEventListener("click", () => {
             fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
-            musiki.volume = .2;
+            musiki.volume = .4;
             musiki.setAttribute("autoplay", "autoplay");
             musiki.setAttribute("loop", "loop");
             musiki.style.display = "none";
@@ -142,7 +142,7 @@ window.addEventListener("click", () => {
             fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/invincible.wav");
-            musiki.volume = .2;
+            musiki.volume = .4;
             musiki.setAttribute("autoplay", "autoplay");
             musiki.setAttribute("loop", "loop");
             musiki.style.display = "none";
