@@ -1,4 +1,7 @@
 {
+    "plane.png": {
+        "fiyat": 0
+    },
     "helikopter.png": {
         "fiyat": 20
     },
@@ -10,6 +13,9 @@
     },
     "uzaymekik.png": {
         "fiyat": 100
+    },
+    "engel.png": {
+        "fiyat": 0
     },
     "kirmiziengel.png": {
         "fiyat": 20

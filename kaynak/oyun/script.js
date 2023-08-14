@@ -22,6 +22,13 @@ const getCSSRule = (ruleName) => {
     return result;
 }
 
+const fitBg = () => {
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundAttachment = "fixed";
+}
+
 window.addEventListener("load", () => {
     oyuncu.style.top = "10%";
     if (localStorage.getItem("ucakKostum") && localStorage.getItem("alinanlar").includes(btoa(localStorage.getItem("ucakKostum")))) {
@@ -43,7 +50,8 @@ document.body.addEventListener("keydown", (event) => {
             localStorage.getItem("alinanlar").includes(btoa("uzaymekik.png")) &&
             localStorage.getItem("alinanlar").includes(btoa("uzayengel.png"))
         ) {
-            document.body.style.background = "url(\"./kaynak/galaxy.jpg\") no-repeat";
+            document.body.style.background = "url(\"./kaynak/galaxy.jpg\")";
+            fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
             musiki.volume = .2;
@@ -54,7 +62,8 @@ document.body.addEventListener("keydown", (event) => {
         }
         
         else {
-            document.body.style.background = "url(\"./kaynak/skybackground.png\") no-repeat";
+            document.body.style.background = "url(\"./kaynak/skybackground.png\")";
+            fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/invincible.wav");
             musiki.volume = .2;
@@ -72,14 +81,74 @@ document.body.addEventListener("keydown", (event) => {
 });
 
 window.addEventListener("touchstart", () => {
-    if (!game.started) game.loop(20);
+    if (!game.started) {
+        game.loop(20);
+        if (
+            localStorage.getItem("ucakKostum") === "uzaymekik.png" &&
+            localStorage.getItem("engelKostum") === "uzayengel.png" &&
+            localStorage.getItem("alinanlar").includes(btoa("uzaymekik.png")) &&
+            localStorage.getItem("alinanlar").includes(btoa("uzayengel.png"))
+        ) {
+            document.body.style.background = "url(\"./kaynak/galaxy.jpg\")";
+            fitBg();
+            const musiki = document.createElement("audio");
+            musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
+            musiki.volume = .2;
+            musiki.setAttribute("autoplay", "autoplay");
+            musiki.setAttribute("loop", "loop");
+            musiki.style.display = "none";
+            musiki.play();
+        }
+        
+        else {
+            document.body.style.background = "url(\"./kaynak/skybackground.png\")";
+            fitBg();
+            const musiki = document.createElement("audio");
+            musiki.setAttribute("src", "./kaynak/arkaplan-ses/invincible.wav");
+            musiki.volume = .2;
+            musiki.setAttribute("autoplay", "autoplay");
+            musiki.setAttribute("loop", "loop");
+            musiki.style.display = "none";
+            musiki.play();
+        }
+    };
     game.jumping = true;
     clearInterval(game.jumpTimeout);
     game.jumpTimeout = setTimeout(() => { game.jumping = false }, screen.height / 7);
 });
 
 window.addEventListener("click", () => {
-    if (!game.started) game.loop(20);
+    if (!game.started) {
+        game.loop(20);
+        if (
+            localStorage.getItem("ucakKostum") === "uzaymekik.png" &&
+            localStorage.getItem("engelKostum") === "uzayengel.png" &&
+            localStorage.getItem("alinanlar").includes(btoa("uzaymekik.png")) &&
+            localStorage.getItem("alinanlar").includes(btoa("uzayengel.png"))
+        ) {
+            document.body.style.background = "url(\"./kaynak/galaxy.jpg\")";
+            fitBg();
+            const musiki = document.createElement("audio");
+            musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
+            musiki.volume = .2;
+            musiki.setAttribute("autoplay", "autoplay");
+            musiki.setAttribute("loop", "loop");
+            musiki.style.display = "none";
+            musiki.play();
+        }
+        
+        else {
+            document.body.style.background = "url(\"./kaynak/skybackground.png\")";
+            fitBg();
+            const musiki = document.createElement("audio");
+            musiki.setAttribute("src", "./kaynak/arkaplan-ses/invincible.wav");
+            musiki.volume = .2;
+            musiki.setAttribute("autoplay", "autoplay");
+            musiki.setAttribute("loop", "loop");
+            musiki.style.display = "none";
+            musiki.play();
+        }
+    };
     game.jumping = true;
     clearInterval(game.jumpTimeout);
     game.jumpTimeout = setTimeout(() => { game.jumping = false }, screen.height / 7);

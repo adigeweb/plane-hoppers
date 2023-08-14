@@ -25,7 +25,7 @@ h1 {
     gap: 2rem;
 }
 
-button {
+.kontrol button {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
@@ -40,23 +40,27 @@ button {
     align-items: center;
 }
 
-button#basla {
+.kontrol #basla {
     background: dodgerblue;
 }
 
-button#dukkan {
+.kontrol button#dukkan {
     background: limegreen;
 }
 
-button:hover {
+.kontrol button#sifirla {
+    background: red;
+}
+
+.kontrol button:hover {
     scale: 1.05;
 }
 
-button:not(:active) {
+.kontrol button:not(:active) {
     box-shadow: 5px 5px 0 rgb(0, 0, 0);
 }
 
-button:active {
+.kontrol button:active {
     position: relative;
     left: 5px;
     top: 5px;
