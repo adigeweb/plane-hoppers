@@ -1,5 +1,13 @@
 window.addEventListener("load", () => {
     document.querySelector("p.para span#sayi").innerText = localStorage.getItem("para");
+    if (!localStorage.getItem("alinanlar").includes(btoa("plane.png"))) {
+        localStorage.setItem("alinanlar", localStorage.getItem("alinanlar") + "," + btoa("plane.png"));
+        location.reload();
+    }
+    if (!localStorage.getItem("alinanlar").includes(btoa("engel.png"))) {
+        localStorage.setItem("alinanlar", localStorage.getItem("alinanlar") + "," + btoa("engel.png"));
+        location.reload();
+    }
 });
 
 document.querySelectorAll(".kutu button.al").forEach(btn => {

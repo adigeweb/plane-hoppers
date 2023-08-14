@@ -52,6 +52,10 @@ h1 {
     background: red;
 }
 
+.kontrol button#yapimcilar {
+    background: gold;
+}
+
 .kontrol button:hover {
     scale: 1.05;
 }
