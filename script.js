@@ -21,3 +21,39 @@ document.querySelector("button#sifirla").addEventListener("click", () => {
         }
     });
 });
+
+document.querySelector("button#yapimcilar").addEventListener("click", () => {
+    document.querySelector(".perde").style.zIndex = "5";
+    document.querySelector(".yapimcilar").style.zIndex = "6";
+    document.querySelector(".perde").style.opacity = "1";
+    document.querySelector(".yapimcilar").style.scale = "1";
+});
+
+document.querySelector(".perde").addEventListener("click", () => {
+    document.querySelector(".perde").style.zIndex = "-5";
+    document.querySelector(".yapimcilar").style.zIndex = "-6";
+    document.querySelector(".perde").style.opacity = "0";
+    document.querySelector(".yapimcilar").style.scale = "0";
+});
+
+document.querySelector(".yapimcilar .kapat").addEventListener("click", () => {
+    document.querySelector(".perde").style.zIndex = "-5";
+    document.querySelector(".yapimcilar").style.zIndex = "-6";
+    document.querySelector(".perde").style.opacity = "0";
+    document.querySelector(".yapimcilar").style.scale = "0";
+});
+
+document.querySelectorAll("[copy]").forEach(item => {
+    item.addEventListener("click", () => {
+        navigator.clipboard.writeText(item.getAttribute("copy"));
+        yapimciMesaj("Discord kullanıcı adı panoya kopyalandı!");
+    });
+});
+
+const yapimciMesaj = (str) => {
+    document.querySelector(".yapimcilar .mesaj").innerHTML = str;
+    document.querySelector(".yapimcilar .mesaj").style.display = "block";
+    setTimeout(() => {
+        document.querySelector(".yapimcilar .mesaj").style.display = "none";
+    }, 1500);
+}

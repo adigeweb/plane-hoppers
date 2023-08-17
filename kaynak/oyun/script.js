@@ -39,6 +39,18 @@ window.addEventListener("load", () => {
         getCSSRule(".bariyer .ust, .bariyer .alt").style.background = `url("../${localStorage.getItem("engelKostum")}")`;
         getCSSRule(".bariyer .ust, .bariyer .alt").style.backgroundSize = "100% 100%";
     }
+    if (
+        localStorage.getItem("ucakKostum") === "uzaymekik.png" &&
+        localStorage.getItem("engelKostum") === "uzayengel.png" &&
+        localStorage.getItem("alinanlar").includes(btoa("uzaymekik.png")) &&
+        localStorage.getItem("alinanlar").includes(btoa("uzayengel.png"))
+    ) {
+        document.body.style.background = "url(\"./kaynak/galaxy.jpg\")";
+    }
+    else {
+        document.body.style.background = "url(\"./kaynak/skybackground.png\")";
+    }
+    fitBg();
 });
 
 document.body.addEventListener("keydown", (event) => {
@@ -50,8 +62,6 @@ document.body.addEventListener("keydown", (event) => {
             localStorage.getItem("alinanlar").includes(btoa("uzaymekik.png")) &&
             localStorage.getItem("alinanlar").includes(btoa("uzayengel.png"))
         ) {
-            document.body.style.background = "url(\"./kaynak/galaxy.jpg\")";
-            fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
             musiki.volume = .4;
@@ -62,8 +72,6 @@ document.body.addEventListener("keydown", (event) => {
         }
         
         else {
-            document.body.style.background = "url(\"./kaynak/skybackground.png\")";
-            fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/invincible.wav");
             musiki.volume = .4;

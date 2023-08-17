@@ -75,3 +75,89 @@ img.logo {
     scale: 4;
     margin-top: 2rem
 }
+
+.yapimcilar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 20rem;
+    display: flex;
+    scale: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    z-index: -6;
+    transition: .3s;
+}
+
+.yapimcilar .kapat {
+    font-size: 1.5rem;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+}
+
+.yapimcilar .kapat:hover {
+    color: gray;
+}
+
+.yapimcilar .kutu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 3px solid dodgerblue;
+    border-radius: 5px;
+    color: dodgerblue;
+    padding: 1rem;
+    transition: .2s;
+}
+
+.yapimcilar .kutu:hover {
+    scale: 1.03;
+    color: white;
+    background: dodgerblue;
+}
+
+.yapimcilar .kutu img {
+    height: 4rem;
+    width: 4rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.yapimcilar .kutu .bilgi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.yapimcilar i.fab {
+    cursor: pointer;
+}
+
+.yapimcilar .mesaj {
+    color: dodgerblue;
+    margin-bottom: 1rem;
+}
+
+.perde {
+    opacity: 0;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    transition: .3s;
+}
