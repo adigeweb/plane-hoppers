@@ -117,6 +117,7 @@ img.logo {
     color: dodgerblue;
     padding: 1rem;
     transition: .2s;
+    width: 80%;
 }
 
 .yapimcilar .kutu:hover {
