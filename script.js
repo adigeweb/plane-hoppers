@@ -58,11 +58,16 @@ const yapimciMesaj = (str) => {
     }, 1500);
 }
 
-document.body.click();
-const musiki = document.createElement("audio");
-musiki.setAttribute("src", "./kaynak/anamenumusiki.wav");
-musiki.volume = .4;
-musiki.setAttribute("autoplay", "autoplay");
-musiki.setAttribute("loop", "loop");
-musiki.style.display = "none";
-musiki.play();
+var playing = false;
+
+window.addEventListener("click", () => {
+    if (playing) return;
+    const musiki = document.createElement("audio");
+    musiki.setAttribute("src", "./kaynak/anamenumusiki.wav");
+    musiki.volume = .4;
+    musiki.setAttribute("autoplay", "autoplay");
+    musiki.setAttribute("loop", "loop");
+    musiki.style.display = "none";
+    musiki.play();
+    playing = true;
+});
