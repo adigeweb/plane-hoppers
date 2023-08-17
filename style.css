@@ -162,3 +162,28 @@ img.logo {
     z-index: -5;
     transition: .3s;
 }
+
+.baslangic {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: black;
+}
+
+.baslangic button#basla {
+    border: 3px solid white;
+    background: limegreen;
+    color: white;
+    height: 3rem;
+    width: 7.5rem;
+    border-radius: 10px;
+    font-size: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}

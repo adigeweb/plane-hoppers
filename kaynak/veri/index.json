@@ -14,6 +14,9 @@
     "uzaymekik.png": {
         "fiyat": 100
     },
+    "nyancat.gif": {
+        "fiyat": 20
+    },
     "engel.png": {
         "fiyat": 0
     },
@@ -31,5 +34,8 @@
     },
     "uzayengel.png": {
         "fiyat": 100
+    },
+    "nyanengel.png": {
+        "fiyat": 20
     }
 }

@@ -71,3 +71,13 @@ window.addEventListener("click", () => {
     musiki.play();
     playing = true;
 });
+
+window.addEventListener("load", () => {
+    const srcParams = new URLSearchParams(location.search);
+    if (!srcParams.get("geri")) document.querySelector(".baslangic").style.display = "block";
+    if (srcParams.get("geri")) document.querySelector(".baslangic").style.display = "none";
+});
+
+document.querySelector(".baslangic button#basla").addEventListener("click", () => {
+    document.querySelector(".baslangic").style.display = "none";
+});
