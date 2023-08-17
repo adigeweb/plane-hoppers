@@ -54,6 +54,7 @@ window.addEventListener("load", () => {
 });
 
 document.body.addEventListener("keydown", (event) => {
+    document.querySelector("span.tap").style.display = "none";
     if (!game.started) {
         game.loop(20);
         if (
@@ -89,6 +90,7 @@ document.body.addEventListener("keydown", (event) => {
 });
 
 window.addEventListener("touchstart", () => {
+    document.querySelector("span.tap").style.display = "none";
     if (!game.started) {
         game.loop(20);
         if (
@@ -98,6 +100,7 @@ window.addEventListener("touchstart", () => {
             localStorage.getItem("alinanlar").includes(btoa("uzayengel.png"))
         ) {
             document.body.style.background = "url(\"./kaynak/galaxy.jpg\")";
+            document.querySelector(".yer").style.background = "url(\"./kaynak/uzayzemin.png\")";
             fitBg();
             const musiki = document.createElement("audio");
             musiki.setAttribute("src", "./kaynak/arkaplan-ses/uzay.mp3");
@@ -126,6 +129,7 @@ window.addEventListener("touchstart", () => {
 });
 
 window.addEventListener("click", () => {
+    document.querySelector("span.tap").style.display = "none";
     if (!game.started) {
         game.loop(20);
         if (
